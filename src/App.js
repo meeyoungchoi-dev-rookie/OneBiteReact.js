@@ -19,13 +19,15 @@ function App() {
     },
   };
 
-
+  const func = () => {
+    return "func";
+  }
 
   return (
-    <div className="App" style={stype.App}>
+    <div className="App" style={style.App}>
       <MyHeader />
       
-       <h2 style={style.h2}>안녕 리액트 {name}</h2>
+       <h2 style={style.h2}>안녕 리액트 {func()}</h2>
        <b id="bold_text" style={style.bold_text}>React.js</b> 
 
       <MyFooter/>
