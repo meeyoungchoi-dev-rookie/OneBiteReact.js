@@ -21,6 +21,15 @@ function App() {
     },
   };
 
+  const counterProps = {
+    a: 1,
+    b: 2,
+    c: 3, 
+    d: 4, 
+    e: 5, 
+    initialValue: 5,
+  }
+
   const func = () => {
     return "func";
   }
@@ -28,8 +37,7 @@ function App() {
   return (
     <div className="App" style={style.App}>
       <MyHeader />
-      <Counter/>
-
+      <Counter {...counterProps}/>
       <MyFooter/>
     </div>
   );
