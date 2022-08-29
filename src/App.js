@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import MyHeader from './MyHeader';
 import MyFooter from './MyFooter';
+import Counter from './Counter';
+
 
 
 function App() {
@@ -8,7 +10,7 @@ function App() {
 
   const style = {
     App: {
-      backgroundColor: "black",
+      backgroundColor: "white",
 
     },
     h2: {
@@ -26,9 +28,7 @@ function App() {
   return (
     <div className="App" style={style.App}>
       <MyHeader />
-      
-       <h2 style={style.h2}>안녕 리액트 {func()}</h2>
-       <b id="bold_text" style={style.bold_text}>React.js</b> 
+      <Counter/>
 
       <MyFooter/>
     </div>
