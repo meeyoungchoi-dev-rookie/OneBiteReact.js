@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
-const Counter = () => {
-    const [count, setCount] = useState(0);
+const Counter = ({initialValue}) => {
+    const [count, setCount] = useState(initialValue);
 
     const onIncrease = () => {
         setCount(count + 1);
@@ -18,6 +18,11 @@ const Counter = () => {
             <button onClick={onDecrease}>-</button>
         </div>
     );
+};
+
+
+Counter.defaultProps = {
+    initialValue: 0,
 };
 
 export default Counter;
